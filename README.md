@@ -4,7 +4,7 @@ We use socket to simulate VM escape instead of reproducing really VM escape.
 
 ## How to use
 1. Copy this project to /root dir of both host and vm.
-2. Make sure network connection between vm and host. PORT 8080 is open.
+2. Make sure network connection between vm and host is available and PORT 28080 is open.
 3. Change /root/test-svirt/vm.c SERVER_IP to host IP.
 4. Change host SElinux to Permissive mode.
 5. Login to host shell, exec 'bash make.sh' in /root/test-svirt, then exec './server_utils'.
@@ -24,7 +24,7 @@ Exec attack success!
 ---------------------------------------------------------------------
 ```
 8. Login to host shell, exec 'setenforce 1', enable sVirt protection.
-9. Login to vm shell exec './vm_escape', the escape would be stopped with follow output:
+9. Login to vm shell, exec './vm_escape', the escape would be stopped with follow output:
 ```shell
 Set selinux context success!
 Exec attack failed!
