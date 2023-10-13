@@ -1,6 +1,7 @@
 
 This project aims to test sVirt protection on VM escape.
 We use socket to simulate VM escape instead of reproducing really VM escape.
+Test env: libvirt 5.5.0，qemu 4.1.0, virt-manager 2.2.1, selinux-policy 3.14.2.
 
 ## How to use
 1. Copy this project to /root dir of both host and vm.
